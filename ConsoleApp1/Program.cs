@@ -1,26 +1,14 @@
-﻿byte myByteNum = 10;
-int myIntNum = 20;
-char myCharNum = 'Z';
-double myDoubleNum = 16;
+﻿string userInput = "";
 
-Console.WriteLine(myByteNum);
-Console.WriteLine(default(byte));
-Console.WriteLine(byte.MaxValue);
-Console.WriteLine(byte.MinValue);
+Console.WriteLine("Hello!");
+Console.WriteLine("What do you want to do?");
+Console.WriteLine("[S]ee all TODOs");
+Console.WriteLine("[A]dd a TODO");
+Console.WriteLine("[R]emove a TODO");
+Console.WriteLine("[E]xit");
 
-Console.WriteLine(myIntNum);
-Console.WriteLine(default(int));
-Console.WriteLine(int.MaxValue);
-Console.WriteLine(int.MinValue);
 
-Console.WriteLine(myCharNum);
-Console.WriteLine(default(char));
-Console.WriteLine(char.MaxValue);
-Console.WriteLine(char.MinValue);
 
-Console.WriteLine(myDoubleNum);
-Console.WriteLine(default(double));
-Console.WriteLine(double.MaxValue);
-Console.WriteLine(double.MinValue);
+userInput = Console.ReadLine();
 
-Console.ReadKey();
+Console.WriteLine("User input is" + userInput);
