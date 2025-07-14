@@ -100,7 +100,6 @@ double z = 10 + 4 * 30 / 10;
 Console.WriteLine(z); //Output: 22
 
 
-
 // test from kambiz
 // test from Soheil
 
@@ -114,5 +113,14 @@ int debugFiveNumber = debugThirdNumber + debugFourNumber +1;
 
 Console.WriteLine(debugFiveNumber);
 
+// test from kambiz
+// test from Soheil
+
+var word = "Soheil";
+var varNumber = 11;
+var userNumber = Console.ReadLine();
+Console.WriteLine(word.GetType());
+Console.WriteLine(varNumber.GetType());
+Console.WriteLine(userNumber);
 
 Console.ReadKey();
