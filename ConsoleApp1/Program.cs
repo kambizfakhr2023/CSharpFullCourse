@@ -99,7 +99,20 @@ Console.WriteLine(title);
 double z = 10 + 4 * 30 / 10;
 Console.WriteLine(z); //Output: 22
 
-Console.ReadKey();
+
 
 // test from kambiz
 // test from Soheil
+
+
+int debugFirstNumber = 10;
+int debugSecondNumber = 6;
+int debugThirdNumber = 7;
+
+int debugFourNumber = debugFirstNumber + debugSecondNumber;
+int debugFiveNumber = debugThirdNumber + debugFourNumber +1;
+
+Console.WriteLine(debugFiveNumber);
+
+
+Console.ReadKey();
