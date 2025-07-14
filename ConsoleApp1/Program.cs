@@ -1,27 +1,20 @@
 ﻿
-byte myByteNum = 10;
-int myIntNum = 20;
-char myCharNum = 'Z';
-double myDoubleNum = 16;
+int myNumber = 18;
+bool myBoolean = false;
 
-Console.WriteLine(myByteNum);
-Console.WriteLine(default(byte));
-Console.WriteLine(byte.MaxValue);
-Console.WriteLine(byte.MinValue);
+myBoolean = (myNumber > 10) ? true : false;
+if (myBoolean)
+    Console.WriteLine("Number is grater than 10");
+else Console.WriteLine("Number is lower than 10");
 
-Console.WriteLine(myIntNum);
-Console.WriteLine(default(int));
-Console.WriteLine(int.MaxValue);
-Console.WriteLine(int.MinValue);
+int firstNumber = 5;
+int secondNumber = 2;
 
-Console.WriteLine(myCharNum);
-Console.WriteLine(default(char));
-Console.WriteLine(char.MaxValue);
-Console.WriteLine(char.MinValue);
+Console.WriteLine("Sum is:" + (firstNumber+secondNumber));
+Console.WriteLine("Sum is:" + (firstNumber - secondNumber));
+Console.WriteLine("Mul is:" + firstNumber*secondNumber);
+Console.WriteLine("Div is:" + firstNumber/secondNumber);
+Console.WriteLine("Rem is:" + firstNumber % secondNumber);
 
-Console.WriteLine(myDoubleNum);
-Console.WriteLine(default(double));
-Console.WriteLine(double.MaxValue);
-Console.WriteLine(double.MinValue);
 
 Console.ReadKey();
