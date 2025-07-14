@@ -100,4 +100,3 @@ double z = 10 + 4 * 30 / 10;
 Console.WriteLine(z); //Output: 22
 
 Console.ReadKey();
-
