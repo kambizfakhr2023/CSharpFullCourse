@@ -6,6 +6,8 @@ char character = 'o';
 int j = 9;
 int k = 0;
 int[][] jaggedArray = new int[4][];
+int[] numbers = { 5, 6, 7, 17, 22 };
+string[] cars = { "Volvo", "BMW", "Ford", "Mazda" };
 
 while (number <= 10)
 {
@@ -51,3 +53,17 @@ jaggedArray[3] = new int[] { 5 };
 //jaggedArray[0] = [1, 3, 5, 7, 9];
 //jaggedArray[1] = [0, 2, 4, 6];
 //jaggedArray[2] = [11, 22];
+
+//var firstFromEnd = numbers[numbers.Length - 1];
+//var secondFromEnd = numbers[numbers.Length - 2]
+
+var firstFromEnd = numbers[^1];
+var secondFromEnd = numbers[^2];
+
+Console.WriteLine("First from end: " + firstFromEnd);
+Console.WriteLine("Second from end: " + secondFromEnd);
+
+foreach (string car in cars)
+{
+    Console.WriteLine(car);
+}
