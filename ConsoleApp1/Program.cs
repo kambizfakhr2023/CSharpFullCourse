@@ -1,4 +1,5 @@
-﻿string userInput = "";
+﻿
+string userInput = "";
 int point = 6;
 
 Console.WriteLine("Hello!");
@@ -52,6 +53,20 @@ Console.ReadKey();
 void PrintSelectedOption(string selectedOption)
 {
     Console.WriteLine("Selected option: " + selectedOption);
+}
+int subValue = Sub(10, 8);
+
+int Sub(int valueOne, int valueTwo)
+{
+    return valueOne-valueTwo;
+}
+
+bool Add (int a, int b)
+    {
+    //if(a < b)
+    // return true;
+    //    return false;
+    return a < b;
 }
 
 //int x = 4;
