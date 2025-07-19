@@ -63,9 +63,22 @@ int Sub(int valueOne, int valueTwo)
 
 bool Add (int a, int b)
     {
+    //primary state
+    //if(a<b)
+    //{
+    //    return true;
+    //}
+    //else
+    //{
+    //    return false;
+    //}
+
+    // refactor 1
     //if(a < b)
     // return true;
     //    return false;
+
+    //refactor 2
     return a < b;
 }
 
