@@ -28,26 +28,31 @@ switch (userInput)
 {
     case "S":
     case "s":
-        Console.WriteLine("The user wants to see all TODOs.");
+        PrintSelectedOption("See all TODOs.");
         break;
     case "A":
     case "a":
-        Console.WriteLine("The user wants to Add a TODO.");
+        PrintSelectedOption("Add a TODO.");
         break;
     case "R":
     case "r":
-        Console.WriteLine("The user wants to remnove a TODO.");
+        PrintSelectedOption("Remove a TODO.");
         break;
     case "E":
     case "e":
-        Console.WriteLine("The user wants to exit.");
+        PrintSelectedOption("Exit.");
         break;
     default:
-        Console.WriteLine("Invalid input.");
+        PrintSelectedOption("Invalid input!");
         break;
 
 }
 Console.ReadKey();
+
+void PrintSelectedOption(string selectedOption)
+{
+    Console.WriteLine("Selected option: " + selectedOption);
+}
 
 //int x = 4;
 
