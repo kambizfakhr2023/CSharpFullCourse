@@ -13,15 +13,40 @@ userInput = Console.ReadLine();
 
 //Console.WriteLine("User input is" + userInput);
 
-if (userInput == "S")
-    Console.WriteLine("The user wants to see all TODOs.");
-else if (userInput == "A")
-    Console.WriteLine("The user wants to Add a TODO.");
-else if (userInput == "R")
-    Console.WriteLine("The user wants to remnove a TODO.");
-else if (userInput == "E")
-    Console.WriteLine("The user wants to exit.");
-else Console.WriteLine("Invalid input.");
+//if (userInput == "S")
+//    Console.WriteLine("The user wants to see all TODOs.");
+//else if (userInput == "A")
+//    Console.WriteLine("The user wants to Add a TODO.");
+//else if (userInput == "R")
+//    Console.WriteLine("The user wants to remnove a TODO.");
+//else if (userInput == "E")
+//    Console.WriteLine("The user wants to exit.");
+//else Console.WriteLine("Invalid input.");
+
+switch (userInput)
+{
+    case "S":
+    case "s":
+        Console.WriteLine("The user wants to see all TODOs.");
+        break;
+    case "A":
+    case "a":
+        Console.WriteLine("The user wants to Add a TODO.");
+        break;
+    case "R":
+    case "r":
+        Console.WriteLine("The user wants to remnove a TODO.");
+        break;
+    case "E":
+    case "e":
+        Console.WriteLine("The user wants to exit.");
+        break;
+    default:
+        Console.WriteLine("Invalid input.");
+        break;
+
+}
+Console.ReadKey();
 
 //int x = 4;
 
