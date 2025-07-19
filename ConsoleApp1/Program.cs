@@ -23,3 +23,23 @@ else if (userInput == "E")
     Console.WriteLine("The user wants to exit.");
 else Console.WriteLine("Invalid input.");
 
+//int x = 4;
+
+//switch (x)
+//{
+//    case 1:
+//        Console.WriteLine("one");
+//        break;
+//    case 2:
+//        Console.WriteLine("two");
+//        break;
+//    case 3:
+//        Console.WriteLine("three");
+//        break;
+//    default:
+//        Console.WriteLine("!!!");
+//        break;
+//}
+
+Console.ReadKey();  
+
