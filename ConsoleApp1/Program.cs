@@ -1,21 +1,8 @@
 ﻿
 
-using ClassLibrary1;
-using System.Security.Principal;
+MarksPrinter<GraduateStudent> mp = new MarksPrinter<GraduateStudent>();
 
-User<int, int> user1  = new User<int, int>();
-User<bool, string> user2 = new User<bool, string>();
-
-user1.RegistrationStatus = 1234;
-user2.RegistrationStatus = false;
-
-user1.Age = 22;
-user2.Age = "35 - 40";
-
-Console.WriteLine(user1.RegistrationStatus);
-Console.WriteLine(user2.RegistrationStatus);
-
-Console.WriteLine(user1.Age);
-Console.WriteLine(user2.Age);
+mp.stu = new GraduateStudent() { Marks = 80 };
+mp.PrintMarks();
 
 Console.ReadKey();
