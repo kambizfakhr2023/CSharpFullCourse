@@ -1,24 +1,29 @@
 ﻿
 
-ParentClass pc;
-
-pc = new ChildClass() { x = 10, y = 20 };
-
-//Console.WriteLine(pc.x);
-//Console.WriteLine(pc.y);
-
-//if (pc is ChildClass)
-//{
-//    ChildClass cc = (ChildClass)pc;
-//    Console.WriteLine(cc.x);
-//    Console.WriteLine(cc.y);
-//}
-
-if (pc is ChildClass cc)
+class Student
 {
-    Console.WriteLine(cc.x);
-    Console.WriteLine(cc.y);
+    public string StudentName { get; set; }
 }
 
+class Program
+{
+    static void Main()
+    {
+        string y;
+        dynamic x;
+        
 
-Console.ReadKey();
+        x = 100;
+        x = "Hello";
+
+        x = new Student() { StudentName = "Harsha" };
+
+        Console.WriteLine(x.StudentName);
+
+        Console.ReadKey();
+
+    }
+
+
+
+}
