@@ -1,7 +1,12 @@
 ﻿
 
-public class Product
+public class ParentClass
 {
-    public double ProductCost { get; set; }
-    public double DiscountPercentage { get; set; }
+    public int x { get; set; }
+
+}
+
+public class ChildClass : ParentClass
+{
+    public int y { get; set; }
 }
