@@ -1,6 +1,7 @@
 ﻿
 
-public class Person
+public class Product
 {
-    public int? NoOfChildren;
+    public double ProductCost { get; set; }
+    public double DiscountPercentage { get; set; }
 }
