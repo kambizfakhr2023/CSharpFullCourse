@@ -1,32 +1,30 @@
 ﻿
 
-public abstract class Student
+public class Emplpoyee
 {
-    public abstract int Marks { get; set; }
-
+    public int Salary;
 }
 
-public class GraduateStudent : Student
+public class Student
 {
-    public override int Marks { get; set; }
-
+    public int Marks;
 }
 
-public class PostGraduateStudent : Student
+public class Sample
 {
-    public override int Marks { get; set; }
-
-}
-
-public class MarksPrinter<T> where T : Student
-{
-
-    public T stu;
-
-    public void PrintMarks()
+    public void PrintData<T>(T obj) where T : class
     {
-        Student temp = (Student)stu;
-        Console.WriteLine(temp.Marks);
+        if (obj.GetType() == typeof(Student))
+        {
+            Student temp = obj as Student;
+            Console.WriteLine(temp.Marks);
+        }
+        else if (obj.GetType() == typeof(Emplpoyee))
+        {
+            Emplpoyee temp = obj as Emplpoyee;
+            Console.WriteLine(temp.Salary);
+        }
     }
+
 
 }
